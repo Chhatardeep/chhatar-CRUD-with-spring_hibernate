@@ -55,9 +55,9 @@ public class AddController {
 	}
 
 	@RequestMapping("/update")
-	public String upadate(Alien a, HttpServletRequest request, HttpServletResponse response) {
+	public String upadate(@ModelAttribute("chhatar")Alien a,@RequestParam("aname") String name) {
 
-		service.update(a, request, response);
+		service.update(a, name);
 		return "index.jsp";
 	}
 

@@ -12,7 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 public interface Servicech {
 
 	public void add(Alien a);
-	public void update(Alien a,HttpServletRequest request, HttpServletResponse response);
+	public void update(Alien a,@RequestParam("aname") String name);
 	public void delete(@RequestParam("y1") int i,Alien a);
 	public Object find(Alien a);
 	public List<Alien> getAll(Alien a);

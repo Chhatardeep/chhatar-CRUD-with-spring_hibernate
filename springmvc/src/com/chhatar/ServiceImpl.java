@@ -24,8 +24,8 @@ public class ServiceImpl implements Servicech{
 	}
 
 	@Override
-	public void update(Alien a,HttpServletRequest request, HttpServletResponse response) {
-		dao.updateData(a, request, response);
+	public void update(Alien a,@RequestParam("aname") String name) {
+		dao.updateData(a,name);
 		
 	}
 

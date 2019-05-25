@@ -47,9 +47,9 @@ table, th, td {
 			<tr>
 
 				<form action=update method="post">
-					<td>ID:<input type="number" name="y1"></td>
+					<td>ID:<input type="number" name="aemp"></td>
 					<td>NAME: <input type="text"
-						placeholder="enter the updated name" name="y2"></td>
+						placeholder="enter the updated name" name="aname"></td>
 					<td><input type="submit" value="UPDATE" /></td>
 				</form>
 			</tr>
@@ -90,6 +90,10 @@ table, th, td {
 				<tr>
 					<th scope="col">EmployeeID</th>
 					<th scope="col">Name</th>
+				</tr>
+				<tr>
+					<th>${chhatar.aemp}</th>
+					<th>${chhatar.aname}</th>
 				</tr>
 				<tr>
 					<th>${result1.aemp}</th>
